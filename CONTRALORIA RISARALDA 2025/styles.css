@@ -147,7 +147,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: transparent !important;
   z-index: 2;
 }
 
@@ -295,16 +295,21 @@ i {
 
 
 
-
-
-
 @media(max-width: 767px) {
   .carousel-item {
-    min-height: 500px;
+    min-height: 220px;
+    background: #fff;
   }
 
   .carousel-item img {
-    height: 500px;
+    height: 220px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 8px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
   }
 
   .carousel-caption {
@@ -312,25 +317,295 @@ i {
   }
 
   .carousel-caption h5 {
-    font-size: 50px;
+    font-size: 32px;
     margin-top: 0;
   }
 
   .carousel-caption p {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
   }
+
 
 
   .services {
-    padding: 30px 0;
+    padding: 20px 0;
+  }
+
+  .services2 {
+    padding: 20px 10px;
   }
 
   .product {
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
   }
 
   .banner {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    background-color: #eae5df;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
+  .banner h2 {
+    font-size: 18px;
+    word-break: break-word;
+    margin-bottom: 10px;
+  }
+
+  .banner img {
+    width: 100% !important;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
+
+
+  .card img,
+  .card2 img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .box-icons i {
+    font-size: 28px;
+  }
+
+  .box-icons h3 {
+    font-size: 16px;
+  }
+
+  footer .col-md-3,
+  footer .col-lg-3,
+  footer .col-xl-3 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  iframe {
+    height: 180px !important;
+  }
+
+  .navbar a {
+    font-size: 15px;
+  }
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 56px;
+    min-height: 56px;
+  }
+
+  .navbar-brand {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  .navbar-toggler {
+    order: 2;
+    margin-left: auto;
+    margin-right: 0;
+    position: static;
+    box-shadow: none;
+    outline: none;
+    z-index: 1051;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: 2px solid #888;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #19875444;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 1050;
+    padding: 10px 0 10px 0;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  /* Justificar contenido de contacto a la izquierda en móvil */
+  .contacto-izquierda {
+    text-align: left !important;
+  }
+
+  .card,
+  .card2 {
+    width: 90% !important;
+    margin: 0 auto 20px auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body .btn-success {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 80%;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  .card .card-body,
+  .card2 .card-body {
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .card-title,
+  .card .card-body p,
+  .card2 .card-title,
+  .card2 .card-body p {
+    width: 100%;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-item {
+    min-height: 320px;
+    background: #fff;
+  }
+
+  .carousel-item img {
+    height: 320px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+    border-radius: 12px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-item img {
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 16px;
+  }
+}
+
+/* RESPONSIVE: Ajustar todo al ancho del banner en móviles */
+@media (max-width: 991.98px) {
+
+  .container,
+  .product .container,
+  .services .container {
+    max-width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item img {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 auto;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .card img,
+  .card2 img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* MEJORAS VISUALES PARA EL ACORDEÓN */
+.accordion-button {
+  background: #f8fafc;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s, box-shadow 0.3s;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #28a745;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 2px solid #90caf9;
+}
+
+.accordion-body {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 0 0 6px 6px;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.accordion-button::after {
+  transition: transform 0.3s;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
 }

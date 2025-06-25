@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!----FAVICON-->
     <link rel="icon" href="img/logo2.png" type="image/x-icon">
 
@@ -20,15 +23,14 @@
     <!---SE CREA UN NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+                aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <a href="#" class="navbar-brand"><span class="text-success">Contraloria General </span> <span
                     class="text-warning">del Risaralda</span>
             </a>
 
-            <!---AQUI SE CREA EL BOTON QUE VA EN LA PARTE DERECHA DEL NAVBAR-->
-            <button class="navbar-toggler" type="button" data-bs-toogle="collapse" data-bs-target="#navbar-start"
-                aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <!----SE APLICAN LOS AJUSTES RESPONSIVE DEL MENU DEL NAVBAR Y SE LISTA LAS OPCIONES DEL MENU DE NAVEGACION-->
             <div class="collapse navbar-collapse" id="navbar-start">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -74,20 +76,10 @@
                     <a href="#" class="btn-btn-primary mt-3"></a>
                 </div>
             </div>
+
+
+         
         </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="img/banner.gif" class="d-block w-100" alt="">
-                <div class="carousel-caption">
-                    <h5></h5>
-                    <p></p>
-                    <p><a href="#" class="btn-btn-primary mt-3"></a></p>
-                </div>
-            </div>
-        </div>
-
-
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselE1" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -136,19 +128,18 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Cerrar"></button>
                                     </div>
-                                    <div class="modal-body text-dark" style="text-align: justify;">
-                                        Para acceder, se requiere una cuenta de correo institucional. <br>
-                                        Si usted es ciudadano, por favor diríjase a la sección de Intranet para
-                                        visitantes.
+                                    <div class="modal-body text-dark" style="text-align: center;">
+                                        Requiere una cuenta de correo institucional. <br>
+                                       
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Cancelar</button>
-                                        <a href="./pages/ciudadanos2.html" class="btn btn-primary" target="_blank">Soy
-                                            ciudadano</a>
+                                        <a href="./pages/ciudadanos.html" class="btn btn-primary" >Soy
+                                            visitante</a>
 
                                         <a href="https://sites.google.com/contraloriarisaralda.gov.co/menuprincipal/inicio?authuser=4&pli=1"
-                                            class="btn btn-success" target="_blank">Soy funcionario</a>
+                                            class="btn btn-success" >Soy funcionario</a>
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +156,7 @@
                                 y mantenerse conectados con nuestros servicios de manera sencilla y
                                 segura.
                             </p>
-                            <a href="pages/ciudadanos2.html" class="btn btn-primary" target="_blank">IR A INTRANET</a>
+                            <a href="pages/ciudadanos.html" class="btn btn-primary" >IR A INTRANET</a>
                         </div>
                     </div>
                 </div>
@@ -464,40 +455,102 @@
 
 
 
-    <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Contraloria General del Risaralda</h2>
-                    <p> <b>Somos una entidad de carácter técnico con autonomía administrativa y presupuestal.</b> El
-                        control
-                        fiscal es una función pública que ejercerá la Contraloría General del Risaralda, la cual vigila
+    <footer class="bg-light text-dark pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success text-center">Nosotros</h5>
+                    <hr class="mb-4">
+                    <img src="./img/logo1.png" alt="Contraloria Risaralda" class="d-block mx-auto"
+                        style="max-width: 70%; height: auto;">
+                    <p class="pt-3" style="text-align: justify;">Somos una entidad de carácter técnico con autonomía
+                        administrativa y presupuestal.
+                        El control fiscal es una función pública que ejercerá la Contraloría General del Risaralda, la
+                        cual vigila
                         la gestión fiscal de la administración y de los particulares o entidades que manejen fondos o
-                        bienes de la Nación en el departamento del Risaralda.
-                    </p>
+                        bienes de la Nación en el departamento del Risaralda. </p>
+                </div>
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success  text-center">Ubicación</h5>
+                    <hr class="mb-4">
                     <div>
-                        <img src="img/logo1.png" alt="">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7741962272744!2d-75.69698792501994!3d4.808790695166646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3887d233fc5b51%3A0x8950108e9d0a4635!2sContralor%C3%ADa%20General%20de%20Risaralda!5e0!3m2!1ses!2sco!4v1750782579438!5m2!1ses!2sco"
+                            width="100%" height="310" style="border:0;" allowfullscreen="true" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 contacto-izquierda">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success text-center">Contacto</h5>
+                    <hr class="mb-4 ">
+                    <p>
+                        <li class="fas fa-home me-2"></li> Calle 19 No 13-17 Esquina, piso 5 Pereira, Risaralda Colombia
+                    </p>
+                    <p>
+                        <li class="fas fa-envelope me-2"></li>contactenos@contraloriarisaralda.gov.co
+                    </p>
+                    <p>
+                        <li class="fas fa-phone me-2"></li> 3136754039
+                    </p>
+                    <p>
+                        <li class="fab fa-whatsapp me-2"></li> 3136754039
+                    </p>
+                    <p>
+                        <li class="fas fa-clock me-2 text-justify"></li>
+                    <p style="text-align: justify;">Lunes a Jueves de 7:30 am a 12 m y 01:00 pm a
+                        4:30 pm Viernes de 7:30 am a 3:30 pm</p>
+
+                    </p>
+
+
+                </div>
+                <hr class="mb-4">
+                <div class="text-center mb-2">
+                    <p>
+                        Siguenos en redes sociales.
+
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/contraloria.risaralda.2025?locale=es_LA"
+                                class="text-dark"> <i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/contraloriarisaraldaoficial/" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/ContraloriaGeneraldelRisaralda?locale=es_LA"
+                                class="text-dark"> <i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.contraloriarisaralda.gov.co/" class="text-dark"><i
+                                    class="fas fa-globe"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-success text-center font-weight-bold">Creado por Contraloria General del Risaralda
+                        <br>@Wilo
+                    </p>
+                </div>
+
+
+
             </div>
         </div>
-    </section>
-
-
-
-
-    <footer class="bg-dark p-2 text-center">
-        <div class="container">
-            <p class="text-white">
-                Guardianes de los recursos publícos. <br>
-                Desarrollado por la Contraloria General del Risaralda <br>
-                @Wilo <br>
-                Version 1.0
-            </p>
-
-        </div>
-
     </footer>
+
+
+
+
 
 
 
